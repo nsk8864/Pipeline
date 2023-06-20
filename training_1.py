@@ -1,3 +1,4 @@
+# training_1.py
 import pandas as pd
 import numpy as np
 import sagemaker
@@ -16,7 +17,7 @@ import boto3
 from sagemaker.inputs import TrainingInput
 
 # Set up the SageMaker session and role
-sagemaker_session = sagemaker.Session(boto3.Session(region_name='eu-north-1'))
+sagemaker_session = sagemaker.Session(boto3.Session(region_name='us-east-1'))
 role = "arn:aws:iam::657237046012:role/service-role/AmazonSageMaker-ExecutionRole-20230604T121038"
 
 # Load the Iris dataset
