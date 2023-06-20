@@ -17,7 +17,6 @@ phases:
       - aws s3 cp output/model.tar.gz codepipeline-us-east-1-196384193514/model.tar.gz
       - echo "Building the inference script..."
       - mkdir -p inference
-      - echo "done"
 import boto3
 import json
 
